@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Loja</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .product h2 {
+      margin-top: 0;
+    }
+
+    .product p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minha Loja</h1>
+  </header>
+  
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Carrinho</a>
+    <a href="#">Contato</a>
+  </nav>
+  
+  <main>
+    <div class="product">
+      <h2>Produto 1</h2>
+      <img src="caminho_da_imagem_1.jpg" alt="Imagem do Produto 1">
+      <p>R$ 19,99</p>
+      <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product">
+      <h2>Produto 2</h2>
+      <img src="caminho_da_imagem_2.jpg" alt="Imagem do Produto 2">
+      <p>R$ 29,99</p>
+      <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="product">
+      <h2>Produto 3</h2>
+      <img src="caminho_da_imagem_3.jpg" alt="Imagem do Produto 3">
+      <p>R$ 39,99</p>
+      <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Minha Loja. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function adicionarAoCarrinho(produtoId) {
+      // Lógica para adicionar o produto ao carrinho
+      console.log("Produto " + produtoId + " adicionado ao carrinho!");
+    }
+  </script>
+</body>
+</html>
